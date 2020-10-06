@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browse Categories</title>
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><img src="images/logo.png" /></a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="./Join Us.html" class="nav-button">Are you a Homepro?</a>
+          </li>
+          <li>
+            <a href="./writeareview.html" class="nav-button">Write a Review</a>
+          </li>
+          <li><a href="./blog.html" class="nav-button">Blog</a></li>
+          <li><a href="./log.html" class="nav-button">Log In</a></li>
+          <li><a href="./signup.html" class="nav-button">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h3>Browse Categories</h3>
+    </header>
+    <div class="hero">
+      <div class="btn-box">
+        <button id="btn1" onclick="openCat1()">
+          Constructions & Renovations
+        </button>
+        <button id="btn2" onclick="openCat2()">Handyman Services</button>
+        <button id="btn3" onclick="openCat3()">Heating & Furnaces</button>
+        <button id="btn4" onclick="openCat4()">Cleaning Services</button>
+        <button id="btn5" onclick="openCat5()">Plumbing</button>
+      </div>
+      <div id="cat1" class="wrap">
+        <div class="categorycard">
+          <img src="images/Basement.jpg" />
+          <div class="container">
+            <h4>Basement Renovations</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/roofingtop.png" />
+          <div class="container">
+            <h4>Roof Renovations</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/gamerooms.jpg" />
+          <div class="container">
+            <h4>Gaming Rooms</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/carpets.jpg" />
+          <div class="container">
+            <h4>Carpet Installers</h4>
+          </div>
+        </div>
+      </div>
+      <div id="cat2" class="wrap">
+        <div class="categorycard">
+          <img src="images/handy1.jpg" />
+          <div class="container">
+            <h4>Appliance Repair</h4>
+          </div>
+        </div>
+
+        <div class="categorycard">
+          <img src="images/handy2.jpg" />
+          <div class="container">
+            <h4>Electricians</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/roofingtop.png" />
+          <div class="container">
+            <h4>Roof Renovations</h4>
+          </div>
+        </div>
+
+        <div class="categorycard">
+          <img src="images/carpets.jpg" />
+          <div class="container">
+            <h4>Carpet Installers</h4>
+          </div>
+        </div>
+      </div>
+      <div id="cat3" class="wrap">
+        <div class="categorycard">
+          <img src="images/Basement.jpg" />
+          <div class="container">
+            <h4>Basement Renovations</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/gamerooms.jpg" />
+          <div class="container">
+            <h4>Gaming Rooms</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/gamerooms.jpg" />
+          <div class="container">
+            <h4>Gaming Rooms</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/carpets.jpg" />
+          <div class="container">
+            <h4>Carpet Installers</h4>
+          </div>
+        </div>
+      </div>
+      <div id="cat4" class="wrap">
+        <div class="categorycard">
+          <img src="images/clean1.jpg" />
+          <div class="container">
+            <h4>Blinds Cleaning</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/clean2.jpg" />
+          <div class="container">
+            <h4>Carpet Cleaning</h4>
+          </div>
+        </div>
+
+        <div class="categorycard">
+          <img src="images/roofingtop.png" />
+          <div class="container">
+            <h4>Roof Renovations</h4>
+          </div>
+        </div>
+
+        <div class="categorycard">
+          <img src="images/carpets.jpg" />
+          <div class="container">
+            <h4>Carpet Installers</h4>
+          </div>
+        </div>
+      </div>
+      <div id="cat5" class="wrap">
+        <div class="categorycard">
+          <img src="images/plum1.jpg" />
+          <div class="container">
+            <h4>Plumbing</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/plum2.jpg" />
+          <div class="container">
+            <h4>Drain Services</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/plum3.jpeg" />
+          <div class="container">
+            <h4>Excavation</h4>
+          </div>
+        </div>
+        <div class="categorycard">
+          <img src="images/plum4.jpg" />
+          <div class="Water Filtration">
+            <h4>Carpet Installers</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var contentCat1 = document.getElementById("cat1");
+      var contentCat2 = document.getElementById("cat2");
+      var contentCat3 = document.getElementById("cat3");
+      var contentCat4 = document.getElementById("cat4");
+      var contentCat5 = document.getElementById("cat5");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+      var btn3 = document.getElementById("btn3");
+      var btn4 = document.getElementById("btn4");
+      var btn5 = document.getElementById("btn5");
+
+      function openCat1() {
+        contentCat1.style.display = "block";
+        contentCat2.style.display = "none";
+        contentCat3.style.display = "none";
+        contentCat4.style.display = "none";
+        contentCat5.style.display = "none";
+        btn1.style.color = "#078db6dc";
+        btn2.style.color = "#000";
+        btn3.style.color = "#000";
+        btn4.style.color = "#000";
+        btn5.style.color = "#000";
+      }
+      function openCat2() {
+        contentCat2.style.display = "block";
+        contentCat1.style.display = "none";
+        contentCat3.style.display = "none";
+        contentCat4.style.display = "none";
+        contentCat5.style.display = "none";
+        btn2.style.color = "#078db6dc";
+        btn1.style.color = "#000";
+        btn3.style.color = "#000";
+        btn4.style.color = "#000";
+        btn5.style.color = "#000";
+      }
+      function openCat3() {
+        contentCat3.style.display = "block";
+        contentCat1.style.display = "none";
+        contentCat2.style.display = "none";
+        contentCat4.style.display = "none";
+        contentCat5.style.display = "none";
+        btn3.style.color = "#078db6dc";
+        btn1.style.color = "#000";
+        btn2.style.color = "#000";
+        btn4.style.color = "#000";
+        btn5.style.color = "#000";
+      }
+      function openCat4() {
+        contentCat4.style.display = "block";
+        contentCat2.style.display = "none";
+        contentCat3.style.display = "none";
+        contentCat1.style.display = "none";
+        contentCat5.style.display = "none";
+        btn4.style.color = "#078db6dc";
+        btn2.style.color = "#000";
+        btn3.style.color = "#000";
+        btn1.style.color = "#000";
+        btn5.style.color = "#000";
+      }
+      function openCat5() {
+        contentCat5.style.display = "block";
+        contentCat2.style.display = "none";
+        contentCat3.style.display = "none";
+        contentCat4.style.display = "none";
+        contentCat1.style.display = "none";
+        btn5.style.color = "#078db6dc";
+        btn2.style.color = "#000";
+        btn3.style.color = "#000";
+        btn4.style.color = "#000";
+        btn1.style.color = "#000";
+      }
+    </script>
+    <footer>
+      <h2>
+        Wish to know all the recent updates?<a href="./newsletter.html"
+          >Subscribe to Our Newsletter Now!</a
+        >
+      </h2>
+      <h2 class="foot">Need Help?<a href="./contact.html">Contact Us</a></h2>
+    </footer>
+  </body>
+</html>

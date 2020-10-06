@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Stars</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="./Join Us.html" class="nav-button">Are you a Homepro?</a>
+            </li>
+            <li>
+              <a href="./browsecategories.html" class="nav-button"
+                >Browse Categories</a
+              >
+            </li>
+            <li>
+              <a href="./writeareview.html" class="nav-button"
+                >Write a Review</a
+              >
+            </li>
+            <li><a href="./blog.html" class="nav-button">Blog</a></li>
+            <li><a href="./log.html" class="nav-button">Log In</a></li>
+            <li><a href="./signup.html" class="nav-button">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="information">
+        <div class="overlay"></div>
+        <img src="images/logo.png" class="home" />
+        <div id="circle">
+          <div class="repairs one">
+            <img src="images/moving.png" />
+            <div>
+              <h1>Moving Services</h1>
+              <p>hellownicbis cbkcbkbc</p>
+            </div>
+          </div>
+          <div class="repairs two">
+            <img src="images/appliancerepair.png" />
+            <div>
+              <h1>Appliance Repair</h1>
+              <p>hellownicb iscbkcbkbc</p>
+            </div>
+          </div>
+          <div class="repairs three">
+            <img src="images/plumbing.png" />
+            <div>
+              <h1>Plumbing Repair</h1>
+              <p>hellownicbiscbkcbkbc</p>
+            </div>
+          </div>
+          <div class="repairs four">
+            <img src="images/roofing.png" />
+            <div>
+              <h1>Roofing Repair</h1>
+              <p>hellownicbiscbkcbkbc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <img src="images/arrow.png" id="upButton" />
+        <h3>Services</h3>
+        <img src="images/arrow.png" id="downButton" />
+      </div>
+    </div>
+    <script>
+      var circle = document.getElementById("circle");
+      var upButton = document.getElementById("upButton");
+      var downButton = document.getElementById("downButton");
+
+      var rotateValue = circle.style.transform;
+      var rotateSum;
+
+      upButton.onclick = function () {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      };
+      downButton.onclick = function () {
+        rotateSum = rotateValue + "rotate(+90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      };
+    </script>
+    <script src="./script.js"></script>
+    <footer>
+      <h2>
+        Wish to know all the recent updates?<a href="./newsletter.html"
+          >Subscribe to Our Newsletter Now!</a
+        >
+      </h2>
+      <h2 class="foot">Need Help?<a href="./contact.html">Contact Us</a></h2>
+    </footer>
+  </body>
+</html>
