@@ -1,0 +1,263 @@
+body {
+  background: rgb(59, 58, 61);
+  backdrop-filter: grayscale(60%);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Calibri;
+  z-index: 0;
+}
+
+header > div {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  transition: all 1s ease-in-out;
+  border-right-color: rgba(0, 0, 0, 0.9);
+}
+
+header > div:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  transition: all 1s ease-in-out;
+  border-right-color: rgba(255, 255, 255, 0.9);
+}
+
+header > #indexDiv {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  text-align: center;
+  width: 100%;
+  display: block;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  border-right-color: rgba(0, 0, 0, 0.9);
+}
+
+header > #indexDiv:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  border-right-color: rgba(255, 255, 255, 0.9);
+}
+
+header > #indexDiv > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.headerImg {
+  width: 25%;
+  border-right-style: solid;
+  border-right-width: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.headerImg:hover {
+  transition: all 0.5s ease-in-out;
+  border-color: rgb(224, 11, 136);
+}
+
+.headerImg > img {
+  margin-top: 0;
+  padding-top: 0;
+  width: 190px;
+  transition-duration: 1s;
+  height: 190px;
+  filter: grayscale(100%);
+  border-radius: 50%;
+}
+
+.headerImg > img:hover {
+  width: 190px;
+  height: 190px;
+  transition-duration: 1s;
+  filter: grayscale(0%);
+  border-radius: 15%;
+  transform: scale(1.2);
+}
+
+.headerIntro {
+  width: 75%;
+  text-align: start;
+  padding-left: 25px;
+}
+
+.headerIntro > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+  text-align: start;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerIntro > h1:hover {
+  transition: all 0.2s ease-in-out;
+  color: rgb(224, 11, 136);
+}
+
+.headerIntro > h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: start;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerIntro > h2:hover {
+  transition: all 0.2s ease-in-out;
+  color: rgb(224, 11, 136);
+}
+
+.headerIntro > p {
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerIntro > p > span:hover {
+  transition: all 0.2s ease-in-out;
+  color: rgb(224, 11, 136);
+}
+
+a {
+  text-decoration: none;
+}
+
+.introContainer {
+  margin-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+  height: max-content;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 15px;
+}
+
+li {
+  font-size: 20px;
+}
+
+section > .introContainer > .idiv > #features > div {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section > .introContainer > .idiv > #features > div > .idiv2 {
+  height: max-content;
+  max-width: 24%;
+  min-width: 24%;
+  margin: 5px;
+  font-size: 20px;
+  padding: 15px;
+  text-transform: uppercase;
+  border-width: 2px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 15%;
+}
+
+section > .introContainer > .idiv > #features > div > .idiv2:hover {
+  border-color: rgb(224, 11, 136);
+  color: rgb(224, 11, 136);
+  font-weight: bold;
+}
+
+.ilist {
+  text-align: center;
+  width: 45%;
+  display: inline-block;
+}
+
+.ilDisk {
+  margin: 15px;
+  text-align: start;
+  padding-left: 15px;
+  display: block;
+}
+
+.divIH:hover {
+  color: rgb(224, 11, 136);
+}
+
+.idiv {
+  width: 70%;
+  margin: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.675);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+  height: max-content;
+}
+
+.idiv:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), #dbdbdb);
+  color: black;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  border-color: rgb(224, 11, 136);
+}
+
+.idiv > h3 {
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.idiv > h3:hover {
+  color: rgb(224, 11, 136);
+}
+
+.idiv > hr {
+  margin-bottom: 15px;
+}
+
+.idiv > p {
+  font-size: 20px;
+  margin: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  height: max-content;
+}

@@ -1,0 +1,718 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+}
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgb(59, 58, 61);
+}
+.wrapper div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgb(252, 252, 252);
+  border-radius: 100px;
+}
+.wrapper div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 30px;
+}
+header .trigger-main {
+  float: right;
+  padding-top: 10px;
+}
+header .trigger-main a {
+  display: inline-block;
+  position: relative;
+  z-index: 101;
+}
+header .trigger-main a span {
+  display: block;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 8px;
+  width: 30px;
+  transition: all 0.5s ease;
+}
+header .trigger-main a span.one {
+  transform-origin: left top;
+}
+header .trigger-main a span.two {
+  transform-origin: left bottom;
+}
+header .trigger-main a.close span.one {
+  transform: rotate(45deg) translateY(-6px);
+}
+header .trigger-main a.close span.two {
+  transform: rotate(-45deg) translateY(6px);
+}
+header nav {
+  background-color: rgb(160, 165, 165);
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 350px;
+  border-radius: 20px;
+  padding: 80px 30px 0px;
+  transform: translateX(100%);
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header nav ul li {
+  display: block;
+  padding: 15px;
+}
+header nav ul li a {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  transform: translateX(50px);
+  opacity: 0;
+  display: block;
+}
+header nav ul li a:hover {
+  color: rgb(224, 11, 136);
+}
+header nav.open {
+  transform: translateX(0);
+  transition-delay: 0s;
+}
+header nav.open ul li a {
+  transform: translateX(0px);
+  opacity: 1;
+}
+header nav ul li:nth-child(1) a {
+  transition-delay: 0.1s;
+}
+header nav ul li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+header nav ul li:nth-child(3) a {
+  transition-delay: 0.3s;
+}
+header nav ul li:nth-child(4) a {
+  transition-delay: 0.4s;
+}
+header nav ul li:nth-child(5) a {
+  transition-delay: 0.5s;
+}
+.wrapper h4 {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  transform: translate(-20%, -50%);
+}
+.wrapper h1 {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 44%;
+  transform: translate(-20%, -50%);
+  font-weight: bold;
+  color: white;
+}
+.wrapper h3 {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+button {
+  width: 120px;
+  position: absolute;
+  left: 14.5%;
+  top: 59%;
+  transform: translate(-20%, -50%);
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  display: flex;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+}
+button:hover {
+  opacity: 70%;
+  transition: all ease 0.5s;
+  color: rgb(224, 11, 136);
+}
+.wrapper .animation {
+  position: relative;
+  left: 60%;
+  top: 10%;
+}
+.animation img {
+  position: absolute;
+  border-radius: 100%;
+  height: 550px;
+  background-color: rgb(69, 68, 70);
+  transition: opacity 1s ease-in-out;
+}
+.animation img.picture:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.picture {
+  position: relative;
+  left: -0.6%;
+  top: 10%;
+}
+.introduction {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  background: rgb(59, 58, 61);
+}
+.introbox {
+  position: relative;
+  left: 10%;
+  top: 13%;
+  background-color: rgb(69, 68, 70);
+  height: 300px;
+  width: 350px;
+  border-style: solid;
+  border-color: rgb(77, 78, 80);
+  border-radius: 20%;
+  border-width: 5px;
+}
+h2 {
+  position: relative;
+  top: 10%;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(224, 11, 136);
+  font-size: 40px;
+}
+.introhead {
+  position: relative;
+  color: rgb(255, 255, 255);
+  bottom: 31%;
+  left: 40%;
+}
+.introbutton {
+  width: 120px;
+  position: absolute;
+  left: 54%;
+  top: 68%;
+  transform: translate(-20%, -50%);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(69, 68, 70);
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: space-around;
+  height: 35px;
+  border-color: rgb(15, 15, 15);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.introbutton:hover {
+  background-color: transparent;
+  opacity: 50%;
+}
+.resumebutton {
+  width: 150px;
+  position: absolute;
+  left: 41.5%;
+  top: 68%;
+  transform: translate(-20%, -50%);
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(69, 68, 70);
+  display: flex;
+  font-size: 16px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: space-around;
+  height: 35px;
+  border-color: rgb(15, 15, 15);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.resumebutton:hover {
+  background-color: transparent;
+  opacity: 50%;
+}
+.contribution {
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  background-color: white;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  display: block;
+}
+.contribute {
+  position: relative;
+  top: 15%;
+  width: 100%;
+}
+.contribution > div {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+  width: 200px;
+  background: rgb(69, 68, 70);
+  text-align: center;
+  font-size: 23px;
+  float: left;
+  top: 60%;
+  /* left: -8%; */
+  height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.card .feature {
+  color: white;
+  text-align: center;
+}
+.card:hover {
+  opacity: 50%;
+}
+.reason {
+  position: absolute;
+  width: 100%;
+  top: 170%;
+  background-color: rgb(69, 68, 70);
+  margin-bottom: 50px;
+  height: max-content;
+  display: block;
+}
+.center {
+  width: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin-top: 150px;
+}
+.box {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+}
+.box p {
+  color: white;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.box p:nth-child(2) {
+  float: right;
+  position: relative;
+  top: -25px;
+}
+.skill {
+  background-color: black;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px soild white;
+  border-radius: 2px;
+}
+.skill-level {
+  background: rgb(224, 11, 136);
+  width: 100%;
+  height: 10px;
+}
+.objective {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(69, 68, 70);
+}
+.left-sec {
+  height: 250px;
+  width: 250px;
+  background-image: url("./images/iconimage.png");
+  float: left;
+  margin: 30px;
+  margin-left: 0;
+  border-radius: 50%;
+  background-color: rgb(77, 78, 80);
+  max-width: 60%;
+  shape-outside: circle();
+}
+.right-sec {
+  text-align: justify;
+}
+spam {
+  line-height: 2;
+  font-size: 16px;
+  color: white;
+}
+.right-sec h1 {
+  position: relative;
+  color: rgb(224, 11, 136);
+  font-size: 22px;
+  font-weight: bold;
+}
+.education {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 50%;
+}
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: rgb(224, 11, 136);
+}
+.timeline ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.timeline ul li {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  list-style: none;
+  box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+.timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(77, 78, 80);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+.timeline ul li:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(77, 78, 80);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+.content {
+  padding-bottom: 20px;
+}
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: rgb(224, 11, 136);
+}
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-weight: 600;
+  color: rgb(77, 78, 80);
+}
+.timeline ul li .time h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: white;
+}
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgb(77, 78, 80);
+  border-radius: 50%;
+}
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgb(77, 78, 80);
+  border-radius: 50%;
+}
+.skillset {
+  position: absolute;
+  width: 100%;
+  top: 130%;
+  height: 450px;
+  background-color: rgb(77, 78, 80);
+  margin-bottom: 1px;
+  margin-top: 100px;
+  /* display: block;*/
+}
+.skillset > div {
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mySkills {
+  position: relative;
+  top: 15%;
+  width: 100%;
+}
+.skillcard {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+  width: 200px;
+  background: white;
+  text-align: center;
+  font-size: 23px;
+  float: left;
+  top: 60%;
+  height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.skillcard .feature {
+  color: rgb(77, 78, 80);
+  text-align: center;
+}
+.skillcard:hover {
+  opacity: 50%;
+}
+.languages {
+  position: absolute;
+  width: 100%;
+  top: 218%;
+  background-color: white;
+  margin-bottom: 50px;
+  height: max-content;
+  display: block;
+}
+.skillbox {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+}
+.skillbox p {
+  color: rgb(77, 78, 80);
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.skillbox p:nth-child(2) {
+  float: right;
+  position: relative;
+  top: -25px;
+}
+.project {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(77, 78, 80);
+}
+.projectcontent {
+  width: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin-top: 100px;
+  background-color: white;
+}
+.projectcontent h3 {
+  color: rgb(224, 11, 136);
+  text-align: center;
+}
+.projectcontent p {
+  color: rgb(77, 78, 80);
+  text-align: center;
+}
+.main {
+  background: rgb(77, 78, 80);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.contact-card {
+  background-color: white;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(224, 11, 136);
+  cursor: pointer;
+}
+
+.contact-card-icon {
+  font-size: 58px;
+  width: 60px;
+  height: 80px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.contact-card:hover .contact-card-icon {
+  background: none;
+  color: rgb(224, 11, 136);
+  transform: scale(1.6);
+}
+
+.contact-card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.contact-card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+.heading {
+  width: 100%;
+  background-color: rgb(77, 78, 80);
+  height: 100px;
+}
+/*
+.cont {
+  position: relative;
+  top: 10%;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(224, 11, 136);
+  font-size: 40px;
+}
+*/
